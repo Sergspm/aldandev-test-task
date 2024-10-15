@@ -1,0 +1,13 @@
+node_modules/
+dist/
+
+.DS_Store
+
+.idea
+.vscode
+
+storage/logs/*
+!storage/logs/.gitkeep
+storage/mongo/data/*
+
+.env

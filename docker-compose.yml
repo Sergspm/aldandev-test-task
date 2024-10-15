@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  app:
+    build: .
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URL=${MONGO_CONN_STRING}
+  mongo:
+    image: mongo:4.4
+    volumes:
+      - ./storage/mongo/data:/data/db
+
+volumes:
+  mongo-data:

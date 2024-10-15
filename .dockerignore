@@ -1,0 +1,6 @@
+node_modules/
+*.env.example
+.editorconfig
+.vscode/
+.idea/
+.DS_Store
